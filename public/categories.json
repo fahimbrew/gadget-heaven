@@ -1,0 +1,16 @@
+[
+    {
+        "id":1,
+        "category":"smartphone"
+    },
+    {
+        "id":2,
+        "category":"smartwatch"
+    },
+    {
+        "id":3,
+        "category":"laptop"
+    }
+    
+
+]

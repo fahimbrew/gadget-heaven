@@ -1,8 +1,8 @@
 [
     {
       "product_id": "P001",
-      "product_title": "Smartphone Galaxy X",
-      "product_image": "https://example.com/images/smartphone_galaxy_x.jpg",
+      "product_title": "Samsung Galaxy X",
+      "product_image": "https://i.ibb.co.com/dJgmrtk/photo-1496037236076-2fbad1c7ac1c-q-80-w-3280-auto-format-fit-crop-ixlib-rb-4-0.jpg",
       "category": "smartphone",
       "price": 899.99,
       "description": "A powerful smartphone with a stunning AMOLED display and 5G capabilities.",
@@ -17,8 +17,8 @@
     },
     {
       "product_id": "P002",
-      "product_title": "Smartphone 12 Pro",
-      "product_image": "https://example.com/images/smartphone_12_pro.jpg",
+      "product_title": "Iphone 12 Pro",
+      "product_image": "https://i.ibb.co.com/GTV6CnJ/photo-1620555576588-a7dd6c04c55d-q-80-w-3276-auto-format-fit-crop-ixlib-rb-4-0.jpg",
       "category": "smartphone",
       "price": 999.99,
       "description": "The latest flagship smartphone with advanced features and incredible performance.",
@@ -33,8 +33,8 @@
     },
     {
       "product_id": "P003",
-      "product_title": "Smartphone Fold Z",
-      "product_image": "https://example.com/images/smartphone_fold_z.jpg",
+      "product_title": "Samsung Fold Z",
+      "product_image": "https://i.ibb.co.com/crWQ2RY/photo-1722151955968-531988d4bd2a-q-80-w-3431-auto-format-fit-crop-ixlib-rb-4-0.jpg",
       "category": "smartphone",
       "price": 1499.99,
       "description": "A foldable smartphone with cutting-edge design and versatile usability.",
@@ -49,8 +49,8 @@
     },
     {
       "product_id": "P004",
-      "product_title": "Smartphone Lite 5G",
-      "product_image": "https://example.com/images/smartphone_lite_5g.jpg",
+      "product_title": "Samsung Lite 5G",
+      "product_image": "https://i.ibb.co.com/5xYZ1jW/photo-1591122947157-26bad3a117d2-q-80-w-3270-auto-format-fit-crop-ixlib-rb-4-0.jpg",
       "category": "smartphone",
       "price": 599.99,
       "description": "A budget-friendly 5G smartphone with an excellent display and long battery life.",
@@ -65,8 +65,8 @@
     },
     {
       "product_id": "P005",
-      "product_title": "Smartphone Max Ultra",
-      "product_image": "https://example.com/images/smartphone_max_ultra.jpg",
+      "product_title": "Iphone 13 pro max",
+      "product_image": "https://i.ibb.co.com/8jvJMd0/photo-1690705229380-a32a8eb5017d-q-80-w-3270-auto-format-fit-crop-ixlib-rb-4-0.jpg",
       "category": "smartphone",
       "price": 1299.99,
       "description": "A premium smartphone with a 108 MP camera and a high refresh rate display.",
@@ -81,8 +81,8 @@
     },
     {
       "product_id": "P006",
-      "product_title": "Smartphone Mini",
-      "product_image": "https://example.com/images/smartphone_mini.jpg",
+      "product_title": "Iphone Mini",
+      "product_image": "https://i.ibb.co.com/8gx4pr9/photo-1605546960121-24e957eb8c15-q-80-w-3436-auto-format-fit-crop-ixlib-rb-4-0.jpg",
       "category": "smartphone",
       "price": 749.99,
       "description": "A compact smartphone with excellent performance and long-lasting battery life.",
@@ -98,7 +98,7 @@
     {
       "product_id": "P007",
       "product_title": "Laptop Gamer X",
-      "product_image": "https://example.com/images/laptop_gamer_x.jpg",
+      "product_image": "https://i.ibb.co.com/5FX9L3q/premium-photo-1726876889330-b0ec9fe1ebc7-q-80-w-3329-auto-format-fit-crop-ixlib-rb-4-0.jpg",
       "category": "laptop",
       "price": 1599.99,
       "description": "A high-performance gaming laptop with an advanced cooling system.",
@@ -114,7 +114,7 @@
     {
       "product_id": "P008",
       "product_title": "Laptop UltraBook Pro",
-      "product_image": "https://example.com/images/laptop_ultrabook_pro.jpg",
+      "product_image": "https://i.ibb.co.com/FBYzDZF/photo-1522199755839-a2bacb67c546-q-80-w-3272-auto-format-fit-crop-ixlib-rb-4-0.jpg",
       "category": "laptop",
       "price": 1299.99,
       "description": "A sleek and lightweight ultrabook for productivity and multitasking.",
@@ -130,7 +130,7 @@
     {
       "product_id": "P009",
       "product_title": "Smartwatch Fit Pro",
-      "product_image": "https://example.com/images/smartwatch_fit_pro.jpg",
+      "product_image": "https://i.ibb.co.com/hs0KZdT/premium-photo-1712761998611-c59db7dff27e-q-80-w-3387-auto-format-fit-crop-ixlib-rb-4-0.jpg",
       "category": "smartwatch",
       "price": 199.99,
       "description": "A feature-packed smartwatch for fitness tracking and notifications.",
@@ -146,7 +146,7 @@
     {
       "product_id": "P010",
       "product_title": "Smartwatch Active 3",
-      "product_image": "https://example.com/images/smartwatch_active_3.jpg",
+      "product_image": "https://i.ibb.co.com/WFN56jQ/premium-photo-1712848347143-6f149f23cdbd-q-80-w-3270-auto-format-fit-crop-ixlib-rb-4-0.jpg",
       "category": "smartwatch",
       "price": 249.99,
       "description": "A stylish smartwatch with advanced health monitoring and GPS.",
