@@ -1,0 +1,163 @@
+[
+    {
+      "product_id": "P001",
+      "product_title": "Smartphone Galaxy X",
+      "product_image": "https://example.com/images/smartphone_galaxy_x.jpg",
+      "category": "smartphone",
+      "price": 899.99,
+      "description": "A powerful smartphone with a stunning AMOLED display and 5G capabilities.",
+      "Specification": [
+        "Screen size: 6.5 inches",
+        "Processor: Snapdragon 888",
+        "Camera: 64 MP + 12 MP",
+        "Battery: 5000mAh"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "P002",
+      "product_title": "Smartphone 12 Pro",
+      "product_image": "https://example.com/images/smartphone_12_pro.jpg",
+      "category": "smartphone",
+      "price": 999.99,
+      "description": "The latest flagship smartphone with advanced features and incredible performance.",
+      "Specification": [
+        "Screen size: 6.7 inches",
+        "Processor: A15 Bionic chip",
+        "Camera: 12 MP triple-lens",
+        "Battery: 4500mAh"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "P003",
+      "product_title": "Smartphone Fold Z",
+      "product_image": "https://example.com/images/smartphone_fold_z.jpg",
+      "category": "smartphone",
+      "price": 1499.99,
+      "description": "A foldable smartphone with cutting-edge design and versatile usability.",
+      "Specification": [
+        "Screen size: 7.6 inches (foldable)",
+        "Processor: Snapdragon 8 Gen 1",
+        "Camera: 12 MP triple-lens",
+        "Battery: 4400mAh"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "P004",
+      "product_title": "Smartphone Lite 5G",
+      "product_image": "https://example.com/images/smartphone_lite_5g.jpg",
+      "category": "smartphone",
+      "price": 599.99,
+      "description": "A budget-friendly 5G smartphone with an excellent display and long battery life.",
+      "Specification": [
+        "Screen size: 6.4 inches",
+        "Processor: MediaTek Dimensity 920",
+        "Camera: 48 MP + 8 MP",
+        "Battery: 5000mAh"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "P005",
+      "product_title": "Smartphone Max Ultra",
+      "product_image": "https://example.com/images/smartphone_max_ultra.jpg",
+      "category": "smartphone",
+      "price": 1299.99,
+      "description": "A premium smartphone with a 108 MP camera and a high refresh rate display.",
+      "Specification": [
+        "Screen size: 6.8 inches",
+        "Processor: Exynos 2200",
+        "Camera: 108 MP quad-lens",
+        "Battery: 5000mAh"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "P006",
+      "product_title": "Smartphone Mini",
+      "product_image": "https://example.com/images/smartphone_mini.jpg",
+      "category": "smartphone",
+      "price": 749.99,
+      "description": "A compact smartphone with excellent performance and long-lasting battery life.",
+      "Specification": [
+        "Screen size: 5.4 inches",
+        "Processor: A14 Bionic chip",
+        "Camera: 12 MP dual-lens",
+        "Battery: 3000mAh"
+      ],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": "P007",
+      "product_title": "Laptop Gamer X",
+      "product_image": "https://example.com/images/laptop_gamer_x.jpg",
+      "category": "laptop",
+      "price": 1599.99,
+      "description": "A high-performance gaming laptop with an advanced cooling system.",
+      "Specification": [
+        "Processor: Intel Core i7",
+        "Graphics card: NVIDIA RTX 3070",
+        "RAM: 16GB",
+        "Storage: 1TB SSD"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "P008",
+      "product_title": "Laptop UltraBook Pro",
+      "product_image": "https://example.com/images/laptop_ultrabook_pro.jpg",
+      "category": "laptop",
+      "price": 1299.99,
+      "description": "A sleek and lightweight ultrabook for productivity and multitasking.",
+      "Specification": [
+        "Processor: Intel Core i5",
+        "Graphics: Integrated Intel Iris Xe",
+        "RAM: 8GB",
+        "Storage: 512GB SSD"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "P009",
+      "product_title": "Smartwatch Fit Pro",
+      "product_image": "https://example.com/images/smartwatch_fit_pro.jpg",
+      "category": "smartwatch",
+      "price": 199.99,
+      "description": "A feature-packed smartwatch for fitness tracking and notifications.",
+      "Specification": [
+        "Display: 1.4 inches AMOLED",
+        "Battery life: 10 days",
+        "Water resistance: 5 ATM",
+        "Health tracking: Yes"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "P010",
+      "product_title": "Smartwatch Active 3",
+      "product_image": "https://example.com/images/smartwatch_active_3.jpg",
+      "category": "smartwatch",
+      "price": 249.99,
+      "description": "A stylish smartwatch with advanced health monitoring and GPS.",
+      "Specification": [
+        "Display: 1.6 inches AMOLED",
+        "Battery life: 7 days",
+        "Water resistance: IP68",
+        "Connectivity: Bluetooth, WiFi"
+      ],
+      "availability": true,
+      "rating": 4.7
+    }
+  ]
+  

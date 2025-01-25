@@ -1,9 +1,18 @@
 import { FaShoppingCart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+import { Link, NavLink, useLocation } from "react-router-dom";
 const Navbar = () => {
+  const { pathname } = useLocation();
+  //   console.log(pathname);
   return (
-    <div className="container mx-auto">
-      <div className="navbar bg-base-100">
+    <div
+      className={`container mx-auto ${
+        pathname === "/"
+          ? "md:absolute md:z-50 md:p-10 md:text-white left-12"
+          : ""
+      }`}
+    >
+      <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,46 +36,96 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    `${
+                      isActive
+                        ? "text-[#9538E2]"
+                        : "hover:bg-[#9538E2] hover:text-white"
+                    }`
+                  }
+                >
+                  Home
+                </NavLink>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <NavLink
+                  to="/statics"
+                  className={({ isActive }) =>
+                    `${
+                      isActive
+                        ? "text-[#9538E2]"
+                        : "hover:bg-[#9538E2] hover:text-white"
+                    }`
+                  }
+                >
+                  Statistics
+                </NavLink>
               </li>
               <li>
-                <a>Item 3</a>
+                <NavLink
+                  to="/dashboard"
+                  className={({ isActive }) =>
+                    `${
+                      isActive
+                        ? "text-[#9538E2]"
+                        : "hover:bg-[#9538E2] hover:text-white"
+                    }`
+                  }
+                >
+                  Dashboard
+                </NavLink>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Gadget Heaven</a>
+          <Link to="/" className="btn btn-ghost text-xl">
+            Gadget Heaven
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `${
+                    isActive
+                      ? "text-[#9538E2] bg-amber-100"
+                      : "hover:bg-[#9538E2] hover:text-white"
+                  }`
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <NavLink
+                to="/statics"
+                className={({ isActive }) =>
+                  `${
+                    isActive
+                      ? "text-[#9538E2]"
+                      : "hover:bg-[#9538E2] hover:text-white"
+                  }`
+                }
+              >
+                Statistics
+              </NavLink>
             </li>
             <li>
-              <a>Item 3</a>
+              <NavLink
+                to="/dashboard"
+                className={({ isActive }) =>
+                  `${
+                    isActive
+                      ? "text-[#9538E2]"
+                      : "hover:bg-[#9538E2] hover:text-white"
+                  }`
+                }
+              >
+                Dashboard
+              </NavLink>
             </li>
           </ul>
         </div>

@@ -7,6 +7,7 @@ const Footer = () => {
           Leading the way in cutting-edge technology and innovation.
         </p>
       </div>
+      <div className="divider"></div>
       <footer className="footer sm:footer-horizontal p-10">
         <nav>
           <h6 className="footer-title">Services</h6>
