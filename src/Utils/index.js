@@ -35,4 +35,54 @@ const removeCart = (gadget)=>{
 
 }
 
-export {addToCart,getAllGadgets,removeCart}
+
+//  get all the wishlist gadgets
+
+const getAllWishList = ()=>{
+    const all = localStorage.getItem("wishlist");
+    if(all){
+        const wishGadgets = JSON.parse(all);
+        return wishGadgets;
+    }else{
+        return [];
+    }
+
+}
+
+
+// add to wishlist cart
+
+const addToWishlist = (gadget)=>{
+    // console.log(gadget);
+    const wishlistGadgets = getAllWishList();
+    const isExist = wishlistGadgets.find(item=>item.product_id === gadget.product_id);
+    if(isExist) return toast.error("Favorites already exist");
+    wishlistGadgets.push(gadget);
+    localStorage.setItem("wishlist",JSON.stringify(wishlistGadgets));
+    // console.log(wishlistGadgets);
+    toast.success("added to favorites");
+}
+
+//  remove items from wish card
+
+const removeWish = (gadget)=>{
+    const wishGadgets = getAllWishList();
+    const remaining = wishGadgets.filter(item=>item.product_id!==gadget.product_id);
+    localStorage.setItem("wishlist",JSON.stringify(remaining));
+    toast.success("Removed from favorites")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export {addToCart,getAllGadgets,removeCart,getAllWishList,addToWishlist,removeWish}

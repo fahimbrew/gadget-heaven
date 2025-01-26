@@ -1,11 +1,15 @@
 import PropTypes from "prop-types";
 import { IoIosCart } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
-import { addToCart } from "../Utils";
+import { addToCart, addToWishlist } from "../Utils";
 
 const DetailsBanner = ({ gadget }) => {
   const handleAddToCart = (gadget) => {
     addToCart(gadget);
+  };
+
+  const handleWishlist = (gadget) => {
+    addToWishlist(gadget);
   };
 
   return (
@@ -96,12 +100,15 @@ const DetailsBanner = ({ gadget }) => {
                   onClick={() => handleAddToCart(gadget)}
                   className="btn bg-[#9538E2] text-white rounded-2xl"
                 >
-                  <span>Add to cart</span>{" "}
+                  <span>Add to cart</span>
                   <span>
                     <IoIosCart></IoIosCart>
                   </span>
                 </button>
-                <button className="rounded-full border btn">
+                <button
+                  onClick={() => handleWishlist(gadget)}
+                  className="rounded-full border btn"
+                >
                   <CiHeart className="text-2xl"></CiHeart>
                 </button>
               </div>

@@ -3,16 +3,24 @@ import DashboardBanner from "../components/DashboardBanner";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
 import { useLoaderData } from "react-router-dom";
-import { getAllGadgets, removeCart } from "../Utils";
+import {
+  getAllGadgets,
+  getAllWishList,
+  removeCart,
+  removeWish,
+} from "../Utils";
 
 const Dashboard = () => {
   const [active, setActive] = useState(true);
   const data = useLoaderData();
   const [gadgets, setGadgets] = useState(data);
+  const [wishGadgets, setWishGadgets] = useState(data);
 
   useEffect(() => {
     const allGadgets = getAllGadgets();
+    const allFavorites = getAllWishList();
     setGadgets(allGadgets);
+    setWishGadgets(allFavorites);
   }, []);
   const handleClick = () => {
     setActive(!active);
@@ -23,6 +31,12 @@ const Dashboard = () => {
     const allGadgets = getAllGadgets();
     setGadgets(allGadgets);
   };
+
+  const handleRemoveWish = (wishGadgets) => {
+    removeWish(wishGadgets);
+    const allFavorites = getAllWishList();
+    setWishGadgets(allFavorites);
+  };
   return (
     <div>
       <DashboardBanner handleClick={handleClick} />
@@ -30,7 +44,10 @@ const Dashboard = () => {
         {active ? (
           <Cart handleRemove={handleRemove} gadgets={gadgets} />
         ) : (
-          <Wishlist />
+          <Wishlist
+            wishGadgets={wishGadgets}
+            handleRemoveWish={handleRemoveWish}
+          />
         )}
       </div>
     </div>
