@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import { TiDelete } from "react-icons/ti";
-import { addToCart } from "../Utils";
+// import { addToCart } from "../Utils";
 
-const WishCart = ({ gadget, handleRemoveWish }) => {
+const WishCart = ({ gadget, handleRemoveWish, handleAdd }) => {
   //   console.log(gadget);
-  const handleAddToCart = (gadget) => {
-    addToCart(gadget);
-  };
+  //   const handleAdd = (gadget) => {
+  //     addToCart(gadget);
+  //   };
 
   const { product_image, product_title, description, price } = gadget;
   return (
@@ -29,7 +29,7 @@ const WishCart = ({ gadget, handleRemoveWish }) => {
             </p>
             <div>
               <button
-                onClick={() => handleAddToCart(gadget)}
+                onClick={() => handleAdd(gadget)}
                 className="btn bg-[#9538E2] text-white rounded-xl"
               >
                 Add to cart
@@ -54,6 +54,7 @@ const WishCart = ({ gadget, handleRemoveWish }) => {
 WishCart.propTypes = {
   gadget: PropTypes.object,
   handleRemoveWish: PropTypes.func,
+  handleAdd: PropTypes.func,
 };
 
 export default WishCart;

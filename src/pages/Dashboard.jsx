@@ -4,6 +4,7 @@ import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
 import { useLoaderData } from "react-router-dom";
 import {
+  addToCart,
   getAllGadgets,
   getAllWishList,
   removeCart,
@@ -22,6 +23,17 @@ const Dashboard = () => {
     setGadgets(allGadgets);
     setWishGadgets(allFavorites);
   }, []);
+
+  const handleAdd = (gadget) => {
+    addToCart(gadget);
+    const allGadgets = getAllGadgets();
+    setGadgets(allGadgets);
+  };
+  const sortFunc = () => {
+    const sorted = [...gadgets].sort((a, b) => b.price - a.price);
+    setGadgets(sorted);
+  };
+
   const handleClick = () => {
     setActive(!active);
     // console.log(active);
@@ -42,9 +54,14 @@ const Dashboard = () => {
       <DashboardBanner handleClick={handleClick} />
       <div>
         {active ? (
-          <Cart handleRemove={handleRemove} gadgets={gadgets} />
+          <Cart
+            handleRemove={handleRemove}
+            sortFunc={sortFunc}
+            gadgets={gadgets}
+          />
         ) : (
           <Wishlist
+            handleAdd={handleAdd}
             wishGadgets={wishGadgets}
             handleRemoveWish={handleRemoveWish}
           />

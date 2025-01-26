@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import WishCart from "./WishCart";
 
-const Wishlist = ({ wishGadgets, handleRemoveWish }) => {
+const Wishlist = ({ wishGadgets, handleRemoveWish, handleAdd }) => {
   //   console.log(wishGadgets);
   return (
     <div>
@@ -12,6 +12,7 @@ const Wishlist = ({ wishGadgets, handleRemoveWish }) => {
             key={gadget.product_id}
             handleRemoveWish={handleRemoveWish}
             gadget={gadget}
+            handleAdd={handleAdd}
           />
         ))}
       </div>
@@ -22,6 +23,7 @@ const Wishlist = ({ wishGadgets, handleRemoveWish }) => {
 Wishlist.propTypes = {
   wishGadgets: PropTypes.array,
   handleRemoveWish: PropTypes.func,
+  handleAdd: PropTypes.func,
 };
 
 export default Wishlist;
