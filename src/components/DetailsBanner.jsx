@@ -1,8 +1,13 @@
 import PropTypes from "prop-types";
 import { IoIosCart } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
+import { addToCart } from "../Utils";
 
 const DetailsBanner = ({ gadget }) => {
+  const handleAddToCart = (gadget) => {
+    addToCart(gadget);
+  };
+
   return (
     <div className="relative md:mb-96">
       <div className="hero bg-[#9538E2] text-white md:p-28 p-10 rounded-3xl">
@@ -87,7 +92,10 @@ const DetailsBanner = ({ gadget }) => {
                 </div>
               </div>
               <div className="flex gap-3">
-                <button className="btn bg-[#9538E2] text-white rounded-2xl">
+                <button
+                  onClick={() => handleAddToCart(gadget)}
+                  className="btn bg-[#9538E2] text-white rounded-2xl"
+                >
                   <span>Add to cart</span>{" "}
                   <span>
                     <IoIosCart></IoIosCart>
