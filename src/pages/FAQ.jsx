@@ -23,7 +23,7 @@ const FAQ = () => {
           </div>
           <div className="collapse-content text-sm">
             We are glad to announce that we are not charging for the delivery at
-            this moment. But in near future you will update our delivery policy.
+            this moment. But in near future we will update our delivery policy.
           </div>
         </div>
         <div className="collapse collapse-plus bg-base-100 border border-base-300">
@@ -39,7 +39,7 @@ const FAQ = () => {
         <div className="collapse collapse-plus bg-base-100 border border-base-300">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title font-semibold">
-            How long does it usually take to deliver products
+            How long does it usually take to deliver products?
           </div>
           <div className="collapse-content text-sm">
             Usually it takes 3-4 days. But most of the time you will get

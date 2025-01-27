@@ -7,7 +7,7 @@ const MainLayouts = () => {
     <div>
       <Navbar />
       {/* Dynamic */}
-      <div className="min-h-[calc(100vh-400px)] container mx-auto p-5">
+      <div className="min-h-[calc(100vh-400px)] container mx-auto md:p-5 p-2">
         <Outlet />
       </div>
       <Footer />

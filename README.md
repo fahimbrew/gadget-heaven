@@ -1,8 +1,25 @@
-# React + Vite
+# Gadget's Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Live-Link : https://gadget1-heaven1.netlify.app/
 
-Currently, two official plugins are available:
+# Concepts used in this project:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. React router dom
+2. Hooks
+3. useState
+4. loader data
+5. router in built methods.
+6. local storage.
+7. ES6 Modern JavaScript.
+
+# What have been used in handling data?
+
+- localstorage
+
+# Feature that I have used in the website:
+
+1. toggle buttons
+2. Dynamic Navigation Bar.
+3. Dynamic and functional buttons.
+4. If anyone try to add same product twice it will show a toaster error message.
+5. if anyone select any product to cart or wishlist it will show two separate success toaster.
