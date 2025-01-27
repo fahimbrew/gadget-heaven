@@ -35,6 +35,12 @@ const removeCart = (gadget)=>{
 
 }
 
+// remove the "cart"
+const removeStorage = () =>{
+    const gadgets = getAllGadgets();
+    localStorage.removeItem("carts",JSON.stringify(gadgets));
+}
+
 
 //  get all the wishlist gadgets
 
@@ -85,4 +91,4 @@ const removeWish = (gadget)=>{
 
 
 
-export {addToCart,getAllGadgets,removeCart,getAllWishList,addToWishlist,removeWish}
+export {addToCart,getAllGadgets,removeCart,getAllWishList,addToWishlist,removeWish,removeStorage}

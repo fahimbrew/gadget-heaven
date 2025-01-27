@@ -77,6 +77,20 @@ const Navbar = () => {
                   Dashboard
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/FAQ"
+                  className={({ isActive }) =>
+                    `${
+                      isActive
+                        ? "text-[#9538E2]"
+                        : "hover:bg-[#9538E2] hover:text-white"
+                    }`
+                  }
+                >
+                  FAQ
+                </NavLink>
+              </li>
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-xl">
@@ -125,6 +139,20 @@ const Navbar = () => {
                 }
               >
                 Dashboard
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/FAQ"
+                className={({ isActive }) =>
+                  `${
+                    isActive
+                      ? "text-[#9538E2]"
+                      : "hover:bg-[#9538E2] hover:text-white"
+                  }`
+                }
+              >
+                FAQ
               </NavLink>
             </li>
           </ul>

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { NavLink, useLoaderData, useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const ButtonContainer = ({ categories }) => {
   //   const params = useParams();
